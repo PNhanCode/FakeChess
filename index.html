@@ -5,6 +5,7 @@
         <meta name = "viewport" content = "width: device-width, initial-scale = 1.0">
         <link rel = "stylesheet" href = "./style.css">
         <title>Chess Login</title>
+        <script type = "text/javascript" src = "./log_in.js"></script>
     </head>
     <body>
         <div id = "main-container-flex">
@@ -22,7 +23,10 @@
                     <label for = "remember-me" id = "remember-me-label">Remember me</label>
                     <a href = "#" id = "forget-password">Forgot Password?</a>
                 </div>
-                <button id = "login-button">Log In</button>
+                <div id = "wrong-syntax-container">
+                    <p id = "wrong-syntax"></p>
+                </div>
+                <button type = "button" id = "login-button" onclick = "log_in_button_on_click()">Log In</button>
                 <div id = "or-linebreak">
                     <span></span>
                     <span>OR</span>
