@@ -84,14 +84,16 @@ input.user-interactive-text{
 }
 #remember-me{
     cursor: pointer;
+    display: inline-block;
+    width: 1vw;
+    height: 1vw;
 }
-#remember-me::after{
-    content: "Remember Me";
-    position: relative;
-    left: 1.2vw;
-    white-space: nowrap;
+#remember-me-label{
     color: gray;
-    font-size: 1vw;
+    font-size: 1.1vw;
+    position: relative;
+    right: 5.3vw;
+    top: 0.1vw;
     cursor: pointer;
 }
 #forget-password{
