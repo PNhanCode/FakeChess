@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(49, 46, 43);
+}
+#main-container-flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#top-icon{
+    display: flex;
+    justify-content: center;
+    width: 98vw; 
+}
+#pawn-image{
+    display: inline-block;
+    width: 5vw;
+    height: 5.5vw;
+    object-fit: cover;
+    margin-left: -1vw;
+    cursor: pointer;
+}
+#top-icon-chess{
+    font-weight: bolder;
+    font-size: 3.5vw;
+    color: darkgreen;
+}
+#top-icon-domain{
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: darkgreen;
+}
+#top-icon-container-text{
+    display: inline-block;
+    margin-left: -1vw;
+    text-shadow: 1px 1px 5px darkgreen;
+    cursor: pointer;
+}
+#login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 34vw;
+    height: 50vw;
+    margin: auto;
+    background-color: rgb(38, 36, 33);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#container-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26vw;
+}
+input.user-interactive-text{
+    height: 3vw;
+    width: 26vw;
+    margin-top: 3vw;
+    background-color: rgb(60, 58, 56);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 2.5vw 2.5vw;
+    background-position-y: center;
+    padding-left: 2.55vw;
+    font-size: 1vw;
+    padding-top: 0.2vw;
+}
+#username{
+    background-image: url("./img/user.png");
+}
+#password{
+    background-image: url("./img/padlock.png");
+}
+#line-container-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 26vw;
+    margin-top: 1vw;
+}
+#remember-me{
+    cursor: pointer;
+}
+#remember-me::after{
+    content: "Remember Me";
+    position: relative;
+    left: 1.2vw;
+    white-space: nowrap;
+    color: gray;
+    font-size: 1vw;
+    cursor: pointer;
+}
+#forget-password{
+    text-decoration: none;
+    color: lightblue;
+    font-size: 1vw;
+}
+#forget-password:hover{
+    opacity: 0.8;
+}
+#login-button{
+    margin-top: 4.5vw;
+    background-color: rgb(127, 166, 80);
+    width: 26vw;
+    height: 5vw;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0 0.4vw 0 0 rgb(83, 113, 51);
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    text-shadow: 1px 1px black;
+}
+#login-button:hover{
+    box-shadow: 0 1px 6px 1px rgba(157, 189, 118, 0.6);
+    background-color: rgb(150, 189, 104);
+}
+#or-linebreak{
+    display: flex;
+    flex-direction: row;
+    margin: 2vw;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    width: 26vw;
+}
+#or-linebreak span:first-of-type, #or-linebreak span:last-of-type{
+    flex-grow: 1;
+    height: 1px;
+    background-color: gray;
+    opacity: 0.5;
+}
+#or-linebreak span:nth-of-type(2){
+    color: gray;
+    font-weight: bold;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+#new-to-chess{
+    display: flex;
+    background-color: rgb(33, 31, 28);
+    width: 34vw;
+    height: 4vw;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#new-to-chess p{
+    font-size: 1.25vw;
+}
+#new-to-chess span{
+    color: rgb(153, 150, 150);
+    font-weight: bold;
+}
+#new-to-chess a{
+    color: lightblue;
+    text-decoration: none;
+}
+#new-to-chess a:hover{
+    opacity: 0.8;
+}
+#other-login-method{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1vw;
+}
+button.other-login-method-button{
+    display: inline-block;
+    margin-bottom: 1vw;
+    width: 26vw;
+    height: 4.2vw;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-style: none;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1vw;
+    background-size: 1.5vw;
+}
+button.other-login-method-button:hover{
+    opacity: 0.9;
+}
+#method-apple{
+    background-image: url("./img/apple.png");
+    background-color: black;
+    color: white;
+}
+#method-apple:hover{
+    box-shadow: 0 0 2px 1px black;
+}
+#method-google{
+    background-image: url("./img/google.png");
+    background-color: white;
+    color: black;
+}
+#method-google:hover{
+    box-shadow: 0 0 2px 1px white;
+}
+#method-facebook{
+    background-image: url("./img/facebook.png");
+    background-size: 2.5vw;
+    background-position-x: 0.55vw;
+    background-color: rgb(24, 119, 242);
+    color: white;
+}
+#method-facebook:hover{
+    box-shadow: 0 0 2px 1px rgb(24, 119, 242);
+}
