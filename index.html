@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width: device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" href = "./style.css">
+        <title>Chess Login</title>
+    </head>
+    <body>
+        <div id = "main-container-flex">
+            <header id = "top-icon">
+                <img src = "./img/pawns.png" alt = "Pawn" id = "pawn-image">
+                <p id = "top-icon-container-text"><span id = "top-icon-chess">Chess</span><span id = "top-icon-domain">.com</span></p>
+            </header>
+            <form id = "login">
+                <div id = "container-flex">
+                    <input class = "user-interactive-text" type = "text" id = "username"  placeholder = "Username or Email">
+                    <input class = "user-interactive-text" type = "password" placeholder = "Password" id = "password">
+                </div>
+                <div id = "line-container-flex">
+                    <input id = "remember-me" type = "checkbox">
+                    <a href = "#" id = "forget-password">Forgot Password?</a>
+                </div>
+                <button id = "login-button">Log In</button>
+                <div id = "or-linebreak">
+                    <span></span>
+                    <span>OR</span>
+                    <span></span>
+                </div>
+                <div id = "other-login-method">
+                    <button href = "#" class = "other-login-method-button" id = "method-apple">Log in with Apple</button>
+                    <button href = "#" class = "other-login-method-button" id = "method-google">Log in with Google</button>
+                    <button href = "#" class = "other-login-method-button" id = "method-facebook">Log in with Facebook</button>
+                </div>
+            </form>
+            <div id = "new-to-chess" align = center>
+                <p><span>New?</span>
+                <a href = "#" id = "start-play-chess">Sign up - and start playing chess!</a></p>
+            </div>
+        </div>
+    </body>
+</html>
