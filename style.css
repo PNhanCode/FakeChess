@@ -95,7 +95,7 @@ input.user-interactive-text{
 }
 #remember-me{
     cursor: pointer;
-    display: inline-block;
+    display: block;
     width: 1vw;
     height: 1vw;
 }
@@ -150,6 +150,7 @@ input.user-interactive-text{
     opacity: 0.5;
 }
 #or-linebreak span:nth-of-type(2){
+    font-size: 1.25vw;
     color: gray;
     font-weight: bold;
     padding-left: 1vw;
@@ -172,6 +173,7 @@ input.user-interactive-text{
 #new-to-chess span{
     color: rgb(153, 150, 150);
     font-weight: bold;
+    font-size: 1.25vw;
 }
 #new-to-chess a{
     color: lightblue;
